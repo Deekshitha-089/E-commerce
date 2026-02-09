@@ -1,0 +1,121 @@
+/* ---------- Reset ---------- */
+body {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  margin: 0; /* IMPORTANT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--black);
+}
+
+
+/* ---------- Color System ---------- */
+:root {
+  --bg-main: #d7d7a8;
+  --primary: #00a385;
+  --dark: #00493a;
+  --black: #001f17;
+  --white: #ffffff;
+  --border: #e5e5e5;
+}
+
+/* ---------- Base ---------- */
+body {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--black);
+}
+
+/* ---------- Card ---------- */
+.auth-container {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 600px;
+  padding: 2.1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+/* ---------- Heading ---------- */
+.auth-container h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+/* ---------- Form ---------- */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.auth-container input {
+  padding: 0.8rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--black);
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ---------- Button ---------- */
+.auth-container button {
+  margin-top: 0.6rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background-color: var(--dark);
+}
+
+/* ---------- Messages ---------- */
+.success {
+  color: var(--primary);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #b00020;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Links ---------- */
+.link {
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+}
+
+.link a {
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
